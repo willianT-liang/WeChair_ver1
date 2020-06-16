@@ -1,0 +1,6 @@
+module.exports = {
+  onLoad:function(event, ownerinstance){
+    var instance = ownerinstance.selectAllComponents('.circle');
+    console.log(instance);   
+  }
+}

@@ -1,0 +1,106 @@
+/* pages/seat/seat.wxss */
+@import "icon/yizi/yizi.wxss";
+@import "icon/menkou/menkou.wxss";
+@import "icon/shujia/shujia.wxss";
+@import "icon/zhouzi/zhouzi.wxss";
+@import "icon/dianji/dianji.wxss";
+@import "icon/index/index.wxss";
+@import "icon/user/user.wxss";
+@import "icon/yanjing/yanjing.wxss";
+@import "icon/yizi2/yizi2.wxss";
+.room-name {
+  display: block;
+  width: 200rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  margin: 0 auto;
+  font-size: 宋体;
+}
+.img {
+  display: block;
+  width: 600rpx;
+  height: 300rpx;
+  margin: 0 auto;
+}
+.seat-map {
+  width: 700rpx;
+  height: 2000rpx;
+  margin: 0rpx auto;
+  margin-top: 50rpx;
+}
+
+.seat {
+  width: 300rpx;
+  height: 2000rpx;
+  float: left;
+}
+
+.seat-block {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0rpx auto;
+}
+
+.seat-block:last-child {
+  margin-bottom: 100rpx;
+}
+
+
+/* 前面座位的样式 */
+.seat-front {
+  width: 100%;
+  height: 70rpx;
+}
+
+.desk {
+  display: block;
+  width: 100%;
+  height: 60rpx;
+
+}
+.seat-after {
+  width: 100%;
+  height: 70rpx;
+}
+
+/* 书架样式 */
+.book {
+  width: 400rpx;
+  height: 2000rpx;
+  float: left;
+}
+.book-line {
+  width: 300rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  margin-top: 50rpx;
+}
+.book-line text{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+  margin-top: 25rpx;
+  display: inline-block;
+}
+/* 底部导航条部分 */
+.nav {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+
+}
+.nav > view {
+  height: 40px;
+  width: 100%;
+  margin-top: 30px;
+  background-color: #F4F4F4;
+  border-top: 2px solid rgb(221, 218, 218);
+}
+.nav-page {
+  height: 40px;
+  width: 650rpx;
+  margin: 0 auto;
+}

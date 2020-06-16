@@ -1,0 +1,41 @@
+<view class="home"></view>
+<view class="halfPage">
+    <view class="arrow" bindtap="goback"></view>
+</view>
+
+<view class='top'>
+    <view>预约区域</view>
+</view>
+
+<view class='container'>
+<view class="text_top">图书馆南楼</view>
+<view class='imagesize'>
+  <image src="icon.png" class='in-image'>
+  </image>
+  </view>
+  <view class="text_right">
+  <view>座位总数：666 个</view>
+<view>空余座位：666 个</view>
+</view>
+ <button class='btn1' open-type='openSetting'>
+    <image class='btnImg' src='icon1.png'></image>
+    <view>预约座位</view>
+ </button>
+
+</view>
+
+<view class='container'>
+<view class="text_top">图书馆北楼</view>
+<view class='imagesize'>
+  <image src="icon.png" class='in-image'>
+  </image>
+</view>
+<view class="text_right">
+  <view>座位总数：666 个</view>
+<view>空余座位：666 个</view>
+</view>
+<button class='btn1' open-type='openSetting'>
+    <image class='btnImg' src='icon1.png'></image>
+    <view>预约座位</view>
+ </button>
+</view>

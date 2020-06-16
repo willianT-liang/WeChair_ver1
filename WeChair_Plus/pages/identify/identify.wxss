@@ -1,0 +1,70 @@
+@import "icon/tianjia/tianjia.wxss";
+.top{
+  width: 650rpx;                   
+  height: 200rpx;        
+  margin: 10rpx auto;
+  margin-top: 150rpx;
+}
+.top image{
+  width: 250rpx;
+  height: 200rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+.text1{
+  width: 650rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  color: gray;
+  font-family: 微软雅黑;
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center;
+}
+.text2{
+  width: 600rpx;
+  height: 70rpx;
+   line-height: 70rpx;
+  margin: 0 auto;
+  color: gray;
+  font-family: 微软雅黑;
+  font-size: 14px;
+  text-indent: 32rpx;
+}
+
+.content{
+  height: 300rpx;
+  width: 680rpx;
+  margin: 0 auto;
+}
+
+.content text{
+  display: inline-block;
+  width: 250rpx;
+  height: 250rpx;
+  margin-top: 25rpx;
+  margin-left: 60rpx;
+  text-align: center;
+  line-height: 250rpx;
+  float: left;
+}
+.submit {
+  width: 400rpx;
+  height: 80rpx;
+  background-color: greenyellow;
+  margin: 0 auto;
+  line-height: 80rpx;
+  text-align: center;
+  font-family: 微软雅黑;
+  font-size: 16px;
+  border-radius: 40rpx;
+  margin-top: 30rpx;
+}
+.student-identify {
+  width: 250rpx;
+  height: 250rpx;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}

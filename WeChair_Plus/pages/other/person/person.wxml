@@ -1,0 +1,65 @@
+<!--pages/person/person.wxml-->
+<!-- 头像和昵称框 -->
+<view wx:if="{{isHide}}">
+  <view wx:if="{{canIUse}}">
+    <view class='header'>
+      <image src=''></image>
+    </view>
+
+    <view class='content'>
+      <view>申请获取以下权限</view>
+      <text>获得你的公开信息(昵称，头像等)</text>
+    </view>
+
+    <button class='button' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+      授权登录
+    </button>
+  </view>
+  <view wx:else>请升级微信版本</view>
+</view>
+<view wx:else="{{isHide}}">
+<view class="top">
+  <image src="{{userInfo.avatarUrl}}" class="head"></image>
+  <view class="name-and-shiming">
+    <text class="name">{{userInfo.nickName}}</text>
+    <text class="shiming"><text class="iconshimingrenzheng iconfont"></text>实名认证</text>
+  </view>
+  <text class="iconfont iconshezhi"></text>
+</view>
+<view class="nav">
+  <text class="nav-child first-child" style="border-bottom:{{bottom1}}" bindtap="tapNav1"><text class="iconfontyuyue iconicon_website_huabanfuben"></text>我的预约</text>
+  <text class="nav-child" style="border-bottom:{{bottom2}}" bindtap="tapNav2"><text class="iconfonttongji icontongji"></text>学习时长统计</text>
+</view>
+<view wx:if="{{navSelect}}" class="bottom">
+  <view  class="now">
+    <text class="now-title">进行中</text>
+    <view class="now-status">
+      <view class="site">北书库3-1排2座</view>
+      <view class="status"><text>使用中</text><text></text></view>
+      <view class="change">
+        <text class="iconfontsettings iconsettings"  bindtap="tapStatus"></text>
+          <view class="change-status" style="display:{{status}}">
+            <text>暂离</text>
+            <text>离座</text>
+          </view>
+      </view>
+    </view>
+  </view>
+  <view class="history">
+    <text class="now-title">历史预约</text>
+    <view class="nocontent">
+      <text class="iconfontzanwushuju iconzanwushuju"></text>
+      <text class="nodata">暂无数据</text>
+    </view>
+  </view>
+  <view  class="study-time">
+
+  </view>
+</view>
+<view wx:else="{{navSelect == false}}" class="bottom2">
+    <view class="nocontent">
+      <text class="iconfontzanwushuju iconzanwushuju"></text>
+      <text class="nodata">暂无数据</text>
+    </view>
+</view>
+</view>

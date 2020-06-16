@@ -1,0 +1,37 @@
+{
+  "id": "1705668",
+  "name": "图书馆座位预约系统",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10371564",
+      "name": "实名认证",
+      "font_class": "shenfenzhenghaomaguizheng",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "6599163",
+      "name": "意见反馈",
+      "font_class": "yijianfankui",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "5434733",
+      "name": "规则",
+      "font_class": "guize",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "13481144",
+      "name": "消 息",
+      "font_class": "xiaoxi1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}

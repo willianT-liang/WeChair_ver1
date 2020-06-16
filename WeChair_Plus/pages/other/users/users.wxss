@@ -1,0 +1,141 @@
+/* pages/mine/mine.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-image:url(); */
+  
+  width: 48%;
+  height: 300rpx;
+  padding-left: 10rpx;
+}
+.home{
+  padding-left: 20rpx;
+
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  padding-left: 300rpx;
+  margin-top: -150rpx;
+  font-size: 45rpx;
+  color: black;
+}
+.id{
+  padding-left: 380rpx;
+  margin-top: 40rpx;
+  font-size: 30rpx;
+  color: gray;
+}
+
+.header {
+  margin: 90rpx 0 90rpx 50rpx;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  width: 650rpx;
+  height: 300rpx;
+  line-height: 450rpx;
+}
+
+.header image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.content {
+  margin-left: 50rpx;
+  margin-bottom: 90rpx;
+}
+
+.content text {
+  display: block;
+  color: #9d9d9d;
+  margin-top: 40rpx;
+}
+
+.bottom {
+  border-radius: 80rpx;
+  margin: 70rpx 50rpx;
+  font-size: 35rpx;
+}
+
+/* 用户中心 */
+
+.hr {
+  width: 100%;
+  height: 5px;
+  background-color: #f4f5f6;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+}
+.title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 70px;
+  font-size: 16px;
+  font-family:Microsoft YaHei ;
+}
+
+.detail2 {
+  font-size: 15px;
+  position: absolute;
+  right: 10px;
+  height: 50px;
+  line-height: 50px;
+  color: #888;
+}
+
+.line {
+  border: 1px solid #ccc;
+  opacity: 0.2;
+}
+/* index/second.wxss */
+.halfPage{
+  display: flex;
+  width: 10vw;
+  height: 5.6vh;
+
+}
+
+.image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  height: 30vh;
+  overflow: hidden;
+
+}
+
+.arrow{
+  position: fixed;
+  left: 20rpx;
+  top: 20rpx;
+  display: flex;
+  width: 35rpx;
+  height:35rpx;
+  border-left: 6rpx solid black;
+  border-top: 6rpx solid black;
+  transform: rotate(-45deg);
+}
+.connect{
+  padding-right: 70rpx;
+  padding-bottom: 10rpx;
+  
+}
+.connect_1{
+  padding-right: 100rpx;
+  margin-top: -110rpx;
+  margin-left: 1000rpx;
+  font-size: 50rpx;
+  color: gray;
+}

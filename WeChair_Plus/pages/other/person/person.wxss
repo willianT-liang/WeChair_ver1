@@ -1,0 +1,209 @@
+/* pages/person/person.wxss */
+@import "icon/shiming/shiming.wxss";
+@import "icon/shezhi/shezhi.wxss";
+@import "icon/yuyue/yuyue.wxss";
+@import "icon/tongji/tongji.wxss";
+@import "icon/settings/settings.wxss";
+@import "icon/zanwu/zanwu.wxss";
+/* 授权部分 */
+.header {
+  margin: 90rpx 0 90rpx 50rpx;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  width: 650rpx;
+  height: 300rpx;
+  line-height: 450rpx;
+}
+
+.header image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.content {
+  margin-left: 50rpx;
+  margin-bottom: 90rpx;
+}
+
+.content text {
+  display: block;
+  color: #9d9d9d;
+  margin-top: 40rpx;
+}
+
+.button {
+  border-radius: 80rpx;
+  margin: 70rpx 50rpx;
+  font-size: 35rpx;
+}
+
+
+
+
+
+/* //页面内容部分 */
+
+.top {
+  width: 650rpx;
+  height: 250rpx;
+  background-color: white;
+  margin: 10rpx auto;
+  
+}
+.head {
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 25rpx; 
+  margin-left: 30rpx;
+  border-radius: 100rpx;
+  float: left;
+}
+.name-and-shiming {
+  display: inline-block;
+  width: 320rpx;
+  height: 200rpx;
+  float: left;
+  margin-top: 25rpx;
+}
+.name {
+  display: block;
+  width: 350rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-indent: 32rpx;
+  font-family: 微软雅黑;
+  font-size: 16px;
+}
+.shiming {
+  display: block;
+  width: 350rpx;
+  height: 100rpx;
+  line-height: 80rpx;
+  text-indent: 16rpx;
+  font-family: 微软雅黑;
+  color: black;
+  font-size: 12px;
+}
+.iconshezhi {
+  width: 100rpx;
+  margin-left: 0rpx;
+  margin-top: 25rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 70rpx;
+  color: #BDC24C;
+}
+
+/* 导航部分css */
+.nav {
+  width: 650rpx;
+  height: 100rpx;
+  margin: 10rpx auto;
+  line-height: 90rpx;
+}
+.nav-child {
+  padding: 10rpx;
+  font-size: 16px;
+  font-family: 微软雅黑;
+  color: black;
+}
+.nav-child {
+  margin-left: 20rpx;
+}
+
+
+
+/* 中间内容部分我的预约 */
+.bottom {
+  height: 1000rpx;
+  width: 650rpx;
+  margin: 0 auto;
+}
+.now {
+  height: 400rpx;
+  width: 650rpx;
+}
+.now-title {
+  display: block;
+  width: 100%;
+  height: 50rpx;
+  font-family: 微软雅黑;
+  font-size: 16px;
+}
+.now-status {
+  width: 100%;
+  height: 200rpx;
+  background-color: white;
+  border-radius: 15rpx;
+  margin-top: 30rpx;
+}
+.site {
+  height: 60rpx;
+  font-family: 微软雅黑;
+  font-size: 18px;
+  text-indent: 16rpx;
+}
+.status {
+  height: 60rpx;
+  margin-top: 10rpx;
+}
+.status text:first-child {
+  display: inline-block;
+  text-indent: 16rpx;
+  font-family: 微软雅黑;
+  color: grey;
+  font-size: 16px;
+  float: left;
+}
+.status text:nth-child(2) {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 5rpx;
+  background-color: #09EB7B;
+  margin-left: 20rpx;
+  border-radius: 30rpx;
+}
+
+.change {
+  height: 70rpx;
+}
+.change-status {
+  display: inline-block;
+  float: left;
+  height: 70rpx;
+  width: 180rpx;
+  background-color: grey;
+  margin-left: 20rpx;
+}
+.change-status text {
+  display: inline-block;
+  width: 90rpx;
+  height: 70rpx;
+  font-family: 微软雅黑;
+  font-size: 16px;
+  line-height: 70rpx;
+  text-align: center;
+}
+/* 历史预约 */
+.nocontent {
+  width: 650rpx;
+  height: 400rpx;
+}
+.nodata {
+  display: block;
+  width: 650rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-family: 微软雅黑;
+  font-size: 18px;
+  color: #E2DDDD;
+}
+
+/* //学习时长统计部分 */
+.bottom2 {
+  height: 1000rpx;
+  width: 650rpx;
+  margin: 0 auto;
+}

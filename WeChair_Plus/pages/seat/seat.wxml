@@ -1,0 +1,181 @@
+<!--pages/seat/seat.wxml-->
+<text class="room-name">北书库-2</text>
+<image src="shuku.jpg" class="img"></image>
+<view class="seat-map">
+  <!-- 座位 -->
+  <view class="seat">
+    <!-- 座位块1 -->
+    <view class="seat-block">
+      <!-- 前面的两个座位 -->
+      <view class="seat-front">
+        <text class="iconfontyizi iconyizi" data-hi = "ten_four" data-status="{{ten_four}}" style="color:{{ten_four}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "ten_three" data-status="{{ten_three}}" style="color:{{ten_three}}" bindtap="select"></text>
+      </view>
+      <!-- 桌子 -->
+      <text class="desk iconfontzhouzi iconzhouzi"></text>
+      <!-- 后面的两个座位 -->
+      <view class="seat-after">
+        <text class="iconfontyizi iconyizi" data-hi = "ten_two" data-status="{{ten_two}}" style="color:{{ten_two}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "ten_one" data-status="{{ten_one}}" style="color:{{ten_one}}" bindtap="select"></text>
+      </view>
+    </view>
+    <!-- 座位块2 -->
+    <view class="seat-block">
+      <!-- 前面的两个座位 -->
+      <view class="seat-front">
+        <text class="iconfontyizi iconyizi" data-hi = "nine_four" data-status="{{nine_four}}" style="color:{{nine_four}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "nine_three" data-status="{{nine_three}}" style="color:{{nine_three}}" bindtap="select"></text>
+      </view>
+      <!-- 桌子 -->
+      <text class="desk iconfontzhouzi iconzhouzi"></text>
+      <!-- 后面的两个座位 -->
+      <view class="seat-after">
+        <text class="iconfontyizi iconyizi" data-hi = "nine_two" data-status="{{nine_two}}" style="color:{{nine_two}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "nine_one" data-status="{{nine_one}}" style="color:{{nine_one}}" bindtap="select"></text>
+      </view>
+    </view>
+    <!-- 座位块3 -->
+    <view class="seat-block">
+      <!-- 前面的两个座位 -->
+      <view class="seat-front">
+        <text class="iconfontyizi iconyizi" data-hi = "eight_four" data-status="{{eight_four}}" style="color:{{eight_four}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "eight_three" data-status="{{eight_three}}" style="color:{{eight_three}}" bindtap="select"></text>
+      </view>
+      <!-- 桌子 -->
+      <text class="desk iconfontzhouzi iconzhouzi"></text>
+      <!-- 后面的两个座位 -->
+      <view class="seat-after">
+        <text class="iconfontyizi iconyizi" data-hi = "eight_two" data-status="{{eight_two}}" style="color:{{eight_two}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "eight_one" data-status="{{eight_one}}" style="color:{{eight_one}}" bindtap="select"></text>
+      </view>
+    </view>
+    <!-- 座位块4 -->
+    <view class="seat-block">
+      <!-- 前面的两个座位 -->
+      <view class="seat-front">
+        <text class="iconfontyizi iconyizi" data-hi = "seven_four" data-status="{{seven_four}}" style="color:{{seven_four}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "seven_three" data-status="{{seven_three}}" style="color:{{seven_three}}" bindtap="select"></text>
+      </view>
+      <!-- 桌子 -->
+      <text class="desk iconfontzhouzi iconzhouzi"></text>
+      <!-- 后面的两个座位 -->
+      <view class="seat-after">
+        <text class="iconfontyizi iconyizi" data-hi = "seven_two" data-status="{{seven_two}}" style="color:{{seven_two}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "seven_one" data-status="{{seven_one}}" style="color:{{seven_one}}" bindtap="select"></text>
+      </view>
+    </view>
+    <!-- 座位块5 -->
+    <view class="seat-block">
+      <!-- 前面的两个座位 -->
+      <view class="seat-front">
+        <text class="iconfontyizi iconyizi" data-hi = "six_four" data-status="{{six_four}}" style="color:{{six_four}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "six_three" data-status="{{six_three}}" style="color:{{six_three}}" bindtap="select"></text>
+      </view>
+      <!-- 桌子 -->
+      <text class="desk iconfontzhouzi iconzhouzi"></text>
+      <!-- 后面的两个座位 -->
+      <view class="seat-after">
+        <text class="iconfontyizi iconyizi" data-hi = "six_two" data-status="{{six_two}}" style="color:{{six_two}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "six_one" data-status="{{six_one}}" style="color:{{six_one}}" bindtap="select"></text>
+      </view>
+    </view>
+    <!-- 座位块6 -->
+    <view class="seat-block">
+      <!-- 前面的两个座位 -->
+      <view class="seat-front">
+        <text class="iconfontyizi iconyizi" data-hi = "five_four" data-status="{{five_four}}" style="color:{{five_four}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "five_three" data-status="{{five_three}}" style="color:{{five_three}}" bindtap="select"></text>
+      </view>
+      <!-- 桌子 -->
+      <text class="desk iconfontzhouzi iconzhouzi"></text>
+      <!-- 后面的两个座位 -->
+      <view class="seat-after">
+        <text class="iconfontyizi iconyizi" data-hi = "five_two" data-status="{{five_two}}" style="color:{{five_two}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "five_one" data-status="{{five_one}}" style="color:{{five_one}}" bindtap="select"></text>
+      </view>
+    </view>
+    <!-- 座位块7 -->
+    <view class="seat-block">
+      <!-- 前面的两个座位 -->
+      <view class="seat-front">
+        <text class="iconfontyizi iconyizi" data-hi = "four_four" data-status="{{four_four}}" style="color:{{four_four}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "four-three"  data-status="{{four_three}}" style="color:{{four_three}}" bindtap="select"></text>
+      </view>
+      <!-- 桌子 -->
+      <text class="desk iconfontzhouzi iconzhouzi"></text>
+      <!-- 后面的两个座位 -->
+      <view class="seat-after">
+        <text class="iconfontyizi iconyizi" data-hi = "four_two" data-status="{{four_two}}" style="color:{{four_two}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "four_one" data-status="{{four_one}}" style="color:{{four_one}}" bindtap="select"></text>
+      </view>
+    </view>
+    <!-- 座位块8 -->
+    <view class="seat-block">
+      <!-- 前面的两个座位 -->
+      <view class="seat-front">
+        <text class="iconfontyizi iconyizi" data-hi = "three_four" data-status="{{three_four}}" style="color:{{three_four}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "three_three" data-status="{{three_three}}" style="color:{{three_three}}" bindtap="select"></text>
+      </view>
+      <!-- 桌子 -->
+      <text class="desk iconfontzhouzi iconzhouzi"></text>
+      <!-- 后面的两个座位 -->
+      <view class="seat-after">
+        <text class="iconfontyizi iconyizi" data-hi = "three_two" data-status="{{three_two}}" style="color:{{three_two}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "three_one" data-status="{{three_one}}" style="color:{{three_one}}" bindtap="select"></text>
+      </view>
+    </view>
+    <!-- 座位块9 -->
+    <view class="seat-block">
+      <!-- 前面的两个座位 -->
+      <view class="seat-front">
+        <text class="iconfontyizi iconyizi" data-hi = "two_four" data-status="{{two_four}}" style="color:{{two_four}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "two_three" data-status="{{two_three}}" style="color:{{two_three}}" bindtap="select"></text>
+      </view>
+      <!-- 桌子 -->
+      <text class="desk iconfontzhouzi iconzhouzi"></text>
+      <!-- 后面的两个座位 -->
+      <view class="seat-after">
+        <text class="iconfontyizi iconyizi" data-hi = "two_two" data-status="{{two_two}}" style="color:{{two_two}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "two_one" data-status="{{two_one}}" style="color:{{two_one}}" bindtap="select"></text>
+      </view>
+    </view>
+    <!-- 座位块10 -->
+    <view class="seat-block">
+      <!-- 前面的两个座位 -->
+      <view class="seat-front">
+        <text class="iconfontyizi iconyizi" data-hi = "one_four" data-status="{{one_four}}" style="color:{{one_four}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "one_three" data-status="{{one_three}}" style="color:{{one_three}}" bindtap="select"></text>
+      </view>
+      <!-- 桌子 -->
+      <text class="desk iconfontzhouzi iconzhouzi"></text>
+      <!-- 后面的两个座位 -->
+      <view class="seat-after">
+        <text class="iconfontyizi iconyizi" data-hi = "one_two" data-status="{{one_two}}" style="color:{{one_two}}" bindtap="select"></text>
+        <text class="iconfontyizi iconyizi" data-hi = "one_one" data-status="{{one_one}}" style="color:{{one_one}}" bindtap="select"></text>
+      </view>
+    </view>
+  </view>
+  <view class="book">
+    <view class="book-line" wx:for="{{array}}" wx:key="a">
+      <text class="iconfontshujia iconshujia"></text>
+      <text class="iconfontshujia iconshujia"></text>
+      <text class="iconfontshujia iconshujia"></text>
+      <text class="iconfontshujia iconshujia"></text>
+    </view>
+  </view>
+</view>
+<view>
+</view>
+  <!-- //底部导航栏 -->
+ 
+<view class="nav" style="margin-top:{{h}}px">
+  <text class="iconfontyizi2 iconyizi2" style="margin-left:{{w}}px" bindtap="tapSaoma"></text>
+  <view>
+    <view class="nav-page">
+    <text class="iconfontzhuye iconzhuye" url="../index/index" bindtap="zhuye"></text>
+    <text class="iconfontdianji icondianji" url="../seat/seat" bindtap="seat"></text>
+    <text class="iconfontyonghu iconyonghu" url="../person/person" bindtap="yonghu"></text>
+    <text class="iconfontyanjing iconyanjing" url="../yuyue/yuyue" bindtap="yuyue"></text>
+    </view>
+  </view>
+</view> 

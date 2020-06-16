@@ -1,0 +1,223 @@
+<!--pages/yuyue/yuyue.wxml-->
+
+<!-- 顶部导航 -->
+<view class="top-nav-background">
+  <view class="top-nav">
+    <text class="yuyue-nav" bindtap="yuyueNav" style="border-bottom:{{yuyueNavStyle}}">预约</text>
+    <text class="shiyon-nav" bindtap="shiyonNav" style="border-bottom:{{shiyonNavStyle}}">使用</text>
+  </view>
+</view>
+<!-- 预约部分 -->
+<view class="yuyue" wx:if="{{topView == 1}}">
+  <view class="yuyue-child-nav-background">
+    <view class="yuyue-child-nav">
+      <text bindtap="allAppoint" style="border-bottom:{{allAppointStyle}}" >全部预约</text>
+      <text bindtap="waitUse" style="border-bottom:{{waitUseStyle}}">待使用</text>
+      <text bindtap="alreadyCancel" style="border-bottom:{{alreadyCancelStyle}}">已取消</text>
+    </view>
+  </view>
+  <!-- 全部预约 -->
+  <view wx:if="{{view == 1}}">
+    <view class="num">共{{appointNum}}个</view>
+    <view class="is-appointing-background" wx:if = "{{appointingShow == true}}">
+      <view class="is-appointing">
+        <view class="is-appointing-status">
+          <image src="tu1.jpg"></image>s
+          <view class="first">
+            <text class="room-name">{{appointingRoomName}}</text>
+            <text class="status">{{appointingStatus}}</text>
+          </view>
+          <view>
+            <text class="seat-num">{{appointingSeat}}</text>
+            <text class="count-down">{{minute}}:{{second}}</text>
+          </view>
+          <view>
+            <text class="when-to-appoint">预约时间</text>
+            <text class="date">{{appointingDate}}</text>
+          </view>
+        </view>
+        <view class="cancel-appoint">
+          <text class="iconfontlajitong iconlajitong" bindtap="cancelAppoint"></text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 历史预约 -->
+    <view class="is-appointing-cancel-background" wx:for="{{usedAppointNum}}" wx:key="a" wx:for-item="i">
+      <view class="is-appointing">
+        <view class="is-appointing-status">
+          <image src="tu1.jpg"></image>
+          <view class="first">
+            <text class="room-name">{{usedAppointRoomName[i]}}</text>
+            <text class="status">{{usedAppointStatus[i]}}</text>
+          </view>
+          <view>
+            <text class="seat-num">{{usedAppointSeat[i]}}</text>
+          </view>
+          <view>
+            <text class="when-to-appoint">预约时间</text>
+            <text class="date">{{usedAppointDate[i]}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 待使用 -->
+  <view wx:elif="{{view == 2}}">
+    <view class="num">共{{appointingNum}}个</view>
+    <view class="is-appointing-background" wx:if="{{appointingShow == true}}">
+      <view class="is-appointing">
+        <view class="is-appointing-status">
+          <image src="tu1.jpg"></image>
+          <view class="first">
+            <text class="room-name">{{appointingRoomName}}</text>
+            <text class="status">{{appointingStatus}}</text>
+          </view>
+          <view>
+            <text class="seat-num">{{appointingSeat}}</text>
+            <text class="count-down">{{minute}}:{{second}}</text>
+          </view>
+          <view>
+            <text class="when-to-appoint">预约时间</text>
+            <text class="date">{{appointingDate}}</text>
+          </view>
+        </view>
+        <view class="cancel-appoint">
+          <text class="iconfontlajitong iconlajitong" bindtap="cancelAppoint"></text>
+        </view>
+      </view>
+    </view>
+  </view>
+   <!-- 已取消 -->
+  <view wx:elif="{{view == 3}}">
+    <view class="num">共{{usedAppointNumber}}个</view>
+    <view class="is-appointing-cancel-background" wx:for="{{usedAppointNum}}" wx:key="a" wx:for-item="i">
+      <view class="is-appointing">
+        <view class="is-appointing-status">
+          <image src="tu1.jpg"></image>
+          <view class="first">
+            <text class="room-name">{{usedAppointRoomName[i]}}</text>
+            <text class="status">{{usedAppointStatus[i]}}</text>
+          </view>
+          <view>
+            <text class="seat-num">{{usedAppointSeat[i]}}</text>
+          </view>
+          <view>
+            <text class="when-to-appoint">预约时间</text>
+            <text class="date">{{usedAppointDate[i]}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+
+<!-- 使用部分 -->
+<view class="shiyon" wx:if="{{topView == 2}}">
+  <view class="shiyon-child-nav-background">
+    <view class="shiyon-child-nav">
+      <text bindtap="allUse" style="border-bottom:{{allUseStyle}}">全部使用</text>
+      <text bindtap="isUsing" style="border-bottom:{{isUsingStyle}}">正使用</text>
+      <text bindtap="alreadyUse" style="border-bottom:{{alreadyUseStyle}}">已使用</text>
+    </view>
+  </view>
+  <!-- 全部使用 -->
+  <view wx:if="{{useView==1}}" >
+    <view class="num">共{{useAllNum}}个</view>
+    <view class="all-use-background" wx:if="{{usingShow == true}}" bindtap="leaveSeat">
+      <view class="is-appointing">
+        <view class="is-appointing-status">
+          <image src="tu1.jpg"></image>
+          <view class="first">
+            <text class="room-name">{{usingRoomName}}</text>
+            <text class="status">{{usingStatus}}</text>
+          </view>
+          <view>
+            <text class="seat-num">{{usingSeat}}</text>
+          </view>
+          <view>
+            <text class="when-to-appoint">预约时间</text>
+            <text class="date">{{usingDate}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 历史使用 -->
+    <view class="all-use-background" wx:for = "{{usedNum}}" wx:for-item="i">
+      <view class="is-appointing">
+        <view class="is-appointing-status">
+          <image src="tu1.jpg"></image>
+          <view class="first">
+            <text class="room-name">{{usedRoomName[i]}}</text>
+            <text class="status">{{usedStatus[i]}}</text>
+          </view>
+          <view>
+            <text class="seat-num">{{usedSeat[i]}}</text>
+          </view>
+          <view>
+            <text class="when-to-appoint">预约时间</text>
+            <text class="date">{{usedDate[i]}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 正使用 -->
+  <view wx:if="{{useView==2}}">
+    <view class="num">共{{usingNum}}个</view>
+    <view class="all-use-background" wx:if="{{usingShow == true}}" bindtap="leaveSeat">
+      <view class="is-appointing">
+        <view class="is-appointing-status">
+          <image src="tu1.jpg"></image>
+          <view class="first">
+            <text class="room-name">{{usingRoomName}}</text>
+            <text class="status">{{usingStatus}}</text>
+          </view>
+          <view>
+            <text class="seat-num">{{usingSeat}}</text>
+          </view>
+          <view>
+            <text class="when-to-appoint">预约时间</text>
+            <text class="date">{{usingDate}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 已使用 -->
+  <view wx:if="{{useView == 3}}">
+    <view class="num">共{{usedNumber}}个</view>
+    <view class="all-use-background" wx:for = "{{usedNum}}" wx:for-item="i">
+      <view class="is-appointing">
+        <view class="is-appointing-status">
+          <image src="tu1.jpg"></image>
+          <view class="first">
+            <text class="room-name">{{usedRoomName[i]}}</text>
+            <text class="status">{{usedStatus[i]}}</text>
+          </view>
+          <view>
+            <text class="seat-num">{{usedSeat[i]}}</text>
+          </view>
+          <view>
+            <text class="when-to-appoint">预约时间</text>
+            <text class="date">{{usedDate[i]}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 底部导航部分 -->
+<view class="nav" style="margin-top:{{h}}px">
+  <text class="iconfontyizi iconyizi" style="margin-left:{{w}}px" bindtap="tapSaoma"></text>
+  <view>
+    <view class="nav-page">
+    <text class="iconfontzhuye iconzhuye" url="../index/index" bindtap="zhuye"></text>
+    <text class="iconfontdianji icondianji" url="../seat/seat" bindtap="seat"></text>
+    <text class="iconfontyonghu iconyonghu" url="../person/person" bindtap="yonghu"></text>
+    <text class="iconfontyanjing iconyanjing" url="../yuyue/yuyue" bindtap="yuyue"></text>
+    </view>
+  </view>
+</view> 

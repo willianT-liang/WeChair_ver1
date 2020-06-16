@@ -1,0 +1,139 @@
+@import "icon/dianji/dianji.wxss";
+@import "icon/index/index.wxss";
+@import "icon/user/user.wxss";
+@import "icon/yanjing/yanjing.wxss";
+@import "icon/yizi/yizi.wxss";
+@import "icon/together/together/together.wxss";
+@import "icon/xiangyou/xiangyou.wxss";
+/* 授权部分 */
+.header {
+  margin: 90rpx 0 90rpx 50rpx;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  width: 650rpx;
+  height: 300rpx;
+  line-height: 450rpx;
+}
+
+.header image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.content {
+  margin-left: 50rpx;
+  margin-bottom: 90rpx;
+}
+
+.content text {
+  display: block;
+  color: #9d9d9d;
+  margin-top: 40rpx;
+}
+
+.button {
+  border-radius: 80rpx;
+  margin: 70rpx 50rpx;
+  font-size: 35rpx;
+}
+
+/* 页面内容部分 */
+
+.head{
+  padding-top: 100rpx;
+  background-color: white;
+}
+.anView{
+  text-align: center;
+}
+.card{
+  width:750rpx;
+  border-bottom:1px solid #eeeeee;
+  background:#ffffff;
+  padding: 35rpx 20rpx;
+  font-size: 32rpx;
+  box-sizing: border-box;
+}
+.card-name{
+  margin-left: 25rpx;
+}
+.card .card-img{
+  width:128rpx;
+  height:128rpx;
+  margin:20rpx;
+  border-radius:50%;
+  vertical-align:middle;
+}
+.avatarUrlView{
+  margin: 0 auto;
+  background-color: #019FE9;
+  border-radius: 50%;
+  height: 150rpx;
+  width: 150rpx;
+  border: 2px solid #BCBCBC;
+  margin-bottom:0rpx; 
+}
+.avatarUrlView image{
+    border-radius: 50%;
+  height: 150rpx;
+  width: 150rpx;
+
+}
+.nickName{
+  font-size: 40rpx;
+  font-weight: 600;
+}
+
+.individual{
+  display: block;
+  width: 700rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  border-bottom: 1px solid rgb(228, 223, 223);
+}
+
+.individual text:first-child {
+  display: inline-block;
+  width: 50rpx;
+  height: 100rpx;
+  float: left;
+  line-height: 100rpx;
+  text-align: center;
+}
+.individual text:nth-child(2) {
+  display: inline-block;
+  width: 200rpx;
+  height: 100rpx;
+  float: left;
+  line-height: 100rpx;
+  text-indent: 25rpx;
+}
+.individual text:nth-child(3) {
+  display: inline-block;
+  width: 100rpx;
+  height: 100rpx;
+  float: right;
+}
+
+
+/* 底部导航条部分 */
+.nav {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+
+}
+.nav > view {
+  height: 40px;
+  width: 100%;
+  margin-top: 30px;
+  background-color: #F4F4F4;
+  border-top: 2px solid rgb(221, 218, 218);
+}
+.nav-page {
+  height: 40px;
+  width: 650rpx;
+  margin: 0 auto;
+}

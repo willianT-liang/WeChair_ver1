@@ -1,0 +1,105 @@
+.home{
+  background-color: rebeccapurple;
+}
+.background{
+  background-color: rgb(12, 7, 7);
+
+}
+
+.top{
+  font-size: 40rpx;
+  width: 100%;
+  height: 77rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagesize{
+ margin-top:50rpx; 
+ margin-left: 60rpx;
+ display:flex;                   
+ justify-content: right;         
+}
+
+.imagesize image { 
+  width:50%;
+  height:250rpx;
+  }
+.container{
+  border: 3rpx wheat solid;
+  display: block;
+  align-items: center;
+  height: 600rpx;
+}
+.text_top{
+  margin-top: -150rpx;
+  color: gray;
+  width: 100%;
+  text-align: center;
+  font-size: 50rpx;
+  font-family:  Microsoft YaHei;
+}
+.text_right{
+  line-height: 70rpx;
+  margin-top: -200rpx;
+  margin-left: 400rpx;
+  color:black;
+  width: 100%;
+  text-align:start;
+  font-size: 30rpx;
+  font-family:  Microsoft YaHei;
+}
+
+/* index/second.wxss */
+.halfPage{
+  display: flex;
+  width: 10vw;
+  height: 5.6vh;
+
+}
+
+.image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  height: 30vh;
+  overflow: hidden;
+
+}
+
+.arrow{
+  position: fixed;
+  left: 20rpx;
+  top: 20rpx;
+  display: flex;
+  width: 35rpx;
+  height:35rpx;
+  border-left: 6rpx solid black;
+  border-top: 6rpx solid black;
+  transform: rotate(-45deg);
+}
+.btn1 {
+  width: 80%;
+  margin-top: 120rpx;
+  background-color: burlywood;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.btnImg {
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+
+.btn1::after {
+  border-radius: 98rpx;
+  border: 0; 
+}

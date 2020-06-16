@@ -1,0 +1,19 @@
+<view class="top">
+  <image src="/pages/identify/identify.png" class="icon">
+  </image>
+</view>
+ 
+ <!-- 中间文字部分 -->
+<view class="text1">实名认证后，您可享受以下服务：</view>
+<view class="text2">1.预约座位服务</view>
+<view class="text2">2.抢座位服务</view>
+<view class="text2">3.学习分享服务</view>
+<view class="text2">4.时间沙漏服务</view>
+
+<image wx:if="{{img == 1}}" class="student-identify" src="{{photoPath}}"></image>
+<view  wx:else="{{img == 0}}" class="content">
+  <text class=".iconfonttianjia .iconshenhe-tianjia" bindtap="selectPhoto"></text>
+  <text style="font-size: 14px; width: 300rpx; margin-left: 30rpx;">请上传学生证正面照</text>
+</view>
+
+<view class="submit" bindtap="submit">提交</view>

@@ -1,0 +1,65 @@
+<!--index.wxml-->
+<view class="top">
+    <image src="tu1.jpg" class="top-img" style="z-index:{{z1}}"></image>
+    <image src="tu2.jpg" class="top-img" style="z-index:{{z2}}"></image>
+    <image src="tu3.jpg" class="top-img" style="z-index:{{z3}}"></image>
+    <wxs module="test" src="./index.wxs"></wxs>
+    <view class="small-circle">
+      <view  class="circle" style="background-color:{{background1}}"></view>
+      <view  class="circle" style="background-color:{{background2}}"></view>
+      <view  class="circle" style="background-color:{{background3}}"></view>
+    </view>
+</view>
+<view class="center">
+<!-- 中间icon部分 -->
+    <view class="center_top">
+        <navigator class="a iconfont iconshijian shijian" url="../appoint/appoint"></navigator>
+        <view class="a iconfont iconpaihang"></view>
+        <view class="a iconfont iconshalou"></view>
+    </view>
+    <view class="center_bottom">
+        <view class="b">预约座位</view>
+        <view class="b">学习排行</view>
+        <view class="b">时间沙漏</view>
+    </view>
+</view>
+
+<!-- 底部标题 -->
+<view class="bottom-title">
+   <text class="share">学习分享</text>
+   <text class="story">你与图书馆有个故事</text>
+</view>
+<!-- 底部图片 -->
+<view class="bottom-image">
+   <view class="img">
+      <image src="tu1.jpg" style="width:300rpx;height:200rpx;float:left"></image>
+      <image src="tu2.jpg" style="width:300rpx;height:200rpx;float:right"></image>
+   </view>
+   <view class="explanation">
+      <view style="width:300rpx;height:100rpx;float:left;">
+       <view class="img-title">推荐书籍</view>
+       <view class="img-exp">图书馆藏着有故事的书</view>
+      </view>
+      <view style="width:300rpx;height:100rpx;float:right;">
+       <view class="img-title">分享故事</view>
+       <view class="img-exp">书里留下属于你的故事</view>
+      </view>
+   </view>
+</view>
+<!-- 底部导航部分 -->
+<view class="nav" style="margin-top:{{h}}px">
+  <text class="iconfontyizi iconyizi" style="margin-left:{{w}}px" bindtap="tapSaoma"></text>
+  <view>
+    <view class="nav-page">
+    <text class="iconfontzhuye iconzhuye" url="../index/index" bindtap="zhuye"></text>
+    <text class="iconfontdianji icondianji" url="../seat/seat" bindtap="seat"></text>
+    <text class="iconfontyonghu iconyonghu" url="../person/person" bindtap="yonghu"></text>
+    <text class="iconfontyanjing iconyanjing" url="../yuyue/yuyue" bindtap="yuyue"></text>
+    </view>
+  </view>
+</view> 
+<!-- <open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data> -->
+<!-- 需要使用 button 来授权登录 -->
+ <!-- <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view wx:else>请升级微信版本</view> -->

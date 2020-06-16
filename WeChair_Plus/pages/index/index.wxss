@@ -1,0 +1,152 @@
+/**index.wxss**/
+@import "icon/time/icontime.wxss";
+@import "icon/rand/rand.wxss";
+@import "icon/shalou/shalou.wxss";
+@import "icon/index/index.wxss";
+@import "icon/user/user.wxss";
+@import "icon/saoma/saoma.wxss";
+@import "icon/dianji/dianji.wxss";
+@import "icon/yanjing/yanjing.wxss";
+@import "icon/yizi/yizi.wxss";
+
+.shijian {
+  font-size: 100rpx;
+}
+.top { /*装3张图片的块的样式 相对定位 */
+  width: 650rpx;
+  height: 300rpx;
+  margin: 10rpx auto;
+  position: relative;
+}
+.top-img {  /*3张装再top块里的图片  绝对定位*/
+  width: 650rpx;
+  height: 320rpx;
+  position:absolute;
+  border-radius: 30rpx;
+}
+/*装小圆点的样式 */
+.small-circle {
+  width:130rpx;
+  height: 30rpx;
+  position: absolute;
+  z-index: 100;
+  margin-left: 260rpx;
+  margin-top: 250rpx;
+}
+/* 小圆点的样式 */
+.circle {
+  width: 30rpx;
+  height: 30rpx;
+  display: inline-block;
+  float: left;
+  margin-left: 12rpx;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 15rpx;
+}
+/* 中间功能键的样式 */
+.center {
+  width: 700rpx;
+  height: 300rpx;
+  margin: 10rpx auto;
+}
+/* 用来装icon图表 */
+.center_top {
+  width: 100%;
+  height: 200rpx;
+}
+/* 用来装功能名称 */
+.center_bottom {
+  width: 100%;
+  height: 100rpx;
+}
+.a {
+  width: 200rpx;
+  height: 200rpx;
+  margin-left: 25rpx; 
+  float: left;
+  border-radius: 100rpx;
+  text-align: center;
+  line-height: 200rpx;
+}
+.b {
+  width: 200rpx;
+  height: 100%;
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  font-family: 微软雅黑;
+  margin-left: 25rpx;
+}
+/* 扫码 */
+
+/* 学习分享 */
+.bottom-title {
+  width: 650rpx;
+  height: 100rpx;
+  margin: 0rpx auto;
+}
+.bottom-title text {
+  display: block;
+}
+.share {
+  font-size: 16px;
+  height: 60rpx;
+  font-weight: bold;
+  font-family: 微软雅黑;
+}
+.story {
+  font-size: 13px;
+  font-family: 微软雅黑;
+  color: grey;
+  text-indent: 16rpx;
+}
+/* 底部图片 */
+.bottom-image {
+  height: 350rpx;
+  width: 650rpx;
+  margin: 10rpx auto;
+}
+.img {
+  width: 100%;
+  height: 200rpx;
+}
+.explanation {
+  width: 100%;
+  height: 130rpx;
+  margin-top: 20rpx;
+}
+.img-title {
+  font-size: 13px;
+  font-family: 微软雅黑;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-weight: bold;
+}
+.img-exp {
+  font-size: 12px;
+  font-family: 微软雅黑;
+  color: grey;
+}
+/* 底部导航条部分 */
+.nav {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+
+}
+.nav > view {
+  height: 40px;
+  width: 100%;
+  margin-top: 30px;
+  background-color: #F4F4F4;
+  border-top: 2px solid rgb(221, 218, 218);
+}
+.nav-page {
+  height: 40px;
+  width: 650rpx;
+  margin: 0 auto;
+}
+
+

@@ -1,0 +1,21 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1585749793394'); /* IE9 */
+  src: url('iconfont.eot?t=1585749793394#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPAAAsAAAAAB8AAAANzAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqDOIMlATYCJAMICwYABCAFhG0HQhvdBsgOJcHAwABgAEBEBNGazt5fUmCU9awBhayqsCRc2WkWMqqOwIj+fF75EjepkZWVKTT4mc0oE6x9LYQz7FN7hK/rE/dOm+Lz3eW5jbVtrEldgHFAgY41KNGogL5YAN4wdhNBQzxMoNagcNhaYXk9sDIwKhCHst0MbMYgN2SHaqFcsTBDnAOlOo3hDwGc8e/HH8QGC5JSASBv86DABtmfT2Ac0TvZay0lgXA6G4xlFJgHMrFb6VhHRKF5hFovRBoF28oOPp9MTlLBZv94BFEGkFkP+mXBNQmx6FKJTCCjGjcAKoP8VK+T4BdnzmenteRlbJ5YYNraN1/cMj63flPvvJDs8685jJ/YimF9WzhufBPA6Waeh6eX6bVhXWQNQ7bPqrn4UoBXrxr4N29M2OvXpoZ60cJD7a5IkLnXr0WsSsY3TYCXL9dge16nzl1w4nU8l1LX96gWz71axmET91Z23AL4ystni77MiuPjcnPjuPjcnGiDnJx4Lg79794gxCXpVDNVQWOuP7REV1AletKstX4bK6TWNt+pvgP46qV+U/1809/HKssZvOvIiW6a6SVOnCB6GSw7UQ9+lAtIeYVrWv9U/PkZlpcL3yAvPIBuo/YexFtpsmXv3haSbsMP7KXaaLz94CExkA4PrgyPj7+VuyCaaSBUjaxnMJPWbCKYVVhzM7bKtJMLLAm5fd7368ZmupZwKlgNTVTa5Qr69gusTlEgm+wujogfSIyXiOFtG2ak/2N5EuD5xFUfXpEVUH2bzuB3CTu2ZF8MjCm7wspYcgPsa6iqVYt/qqfV56GuDpDYQrUplJFUGUCh2jg50+dRUmcBZdUWUWtO0fI6bTSEyFOAWUMSQrOzSBrdotDsETnTP6Gk0zeUNQeBWvsxZ8M6kyFzeRoyG8gmWNoE2ap4JGQ2OJFdi+xNLrOWFnOGiDRd9goxkdH5aBHyIG2KKXqzPdYwJEHSFLdQKB2HXC5F8GqKA1mNyEbD8KZGRUlVL4q0Km7grNIgZgbERmDRRiCzUnhItLOBK3y+FmLXxMVMa2jq8YoQjU7uXRAjUnQHcpHC06npVp7RNbOLZTBIBBKNwk1QKNkQFwwpBN7qfg6IlSFS44CAV6oopZ3UVRG5vMr9drugFtCmgHYCuq98xw0tyKLLBtrQ2GS2mD1SkwV5AAAA') format('woff2'),
+  url('iconfont.woff?t=1585749793394') format('woff'),
+  url('iconfont.ttf?t=1585749793394') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1585749793394#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconicon_website_huabanfuben:before {
+  content: "\e6cf";
+}
+
